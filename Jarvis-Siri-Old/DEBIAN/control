@@ -1,0 +1,9 @@
+Package: org.golde.cydia.sirijarvis
+Name: Jarvis for Siri
+Version: 0.1
+Architecture: iphoneos-arm
+Conflicts: com.cydro.jarvisforsiri, com.cydro.jarvisforsiri2
+Description: Make Siri sound like Jarvis. Old set of sounds. Doesn't work on iOS 9. Sounds takin from movie. 
+Maintainer: Eric Golde <eric@golde.org>
+Author: Eric Golde <eric@golde.org>
+Section: ECR_Tweaks

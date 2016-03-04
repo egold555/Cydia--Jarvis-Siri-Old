@@ -1,0 +1,33 @@
+#!/bin/bash
+echo "Starting to install Jarvis-Siri v1 By Eric Golde..."
+cd /System/Library/Audio/UISounds
+echo "Making backup of all UI sounds...."
+mkdir Backup
+
+mv "/System/Library/Audio/UISounds/jbl_ambiguous.caf" "/System/Library/Audio/UISounds/Backup/jbl_ambiguous.caf"
+echo "/System/Library/Audio/UISounds/jbl_ambiguous.caf"
+mv "/System/Library/Audio/UISounds/jbl_begin.caf" "/System/Library/Audio/UISounds/Backup/jbl_begin.caf"
+echo "/System/Library/Audio/UISounds/jbl_begin.caf"
+mv "/System/Library/Audio/UISounds/jbl_cancel.caf" "/System/Library/Audio/UISounds/Backup/jbl_cancel.caf"
+echo "/System/Library/Audio/UISounds/jbl_cancel.caf"
+mv "/System/Library/Audio/UISounds/jbl_confirm.caf" "/System/Library/Audio/UISounds/Backup/jbl_confirm.caf"
+echo "/System/Library/Audio/UISounds/jbl_confirm.caf"
+mv "/System/Library/Audio/UISounds/jbl_no_match.caf" "/System/Library/Audio/UISounds/Backup/jbl_no_match.caf"
+echo "/System/Library/Audio/UISounds/jbl_no_match.caf"
+echo "Done!"
+echo "Thanks for installing Jarvis-Siri v1 By Eric Golde!"
+echo "Reboot!!"
+echo "Reboot!!"
+echo "Reboot!!"
+echo "Reboot!!"
+echo "Reboot!!"
+
+declare -a cydia
+cydia=($CYDIA)
+if [[ $1 == install || $1 == upgrade || $1 == reinstall ]]; then
+if [[ ${CYDIA+@} ]]; then
+eval "echo 'finish:reboot' >&${cydia[0]}"
+fi	
+fi
+
+exit 0

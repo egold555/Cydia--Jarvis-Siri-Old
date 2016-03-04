@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Removing Jarvis-Siri v1 By Eric Golde..."
+cd /System/Library/Audio/UISounds
+echo "Moving backup sounds back..."
+mv "/System/Library/Audio/UISounds/Backup/jbl_ambiguous.caf" "/System/Library/Audio/UISounds/jbl_ambiguous.caf"
+echo "/System/Library/Audio/UISounds/Backup/jbl_ambiguous.caf"
+mv "/System/Library/Audio/UISounds/Backup/jbl_begin.caf" "/System/Library/Audio/UISounds/jbl_begin.caf"
+echo "/System/Library/Audio/UISounds/Backup/jbl_begin.caf"
+mv "/System/Library/Audio/UISounds/Backup/jbl_cancel.caf" "/System/Library/Audio/UISounds/jbl_cancel.caf"
+echo "/System/Library/Audio/UISounds/Backup/jbl_cancel.caf"
+mv "/System/Library/Audio/UISounds/Backup/jbl_confirm.caf" "/System/Library/Audio/UISounds/jbl_confirm.caf"
+echo "/System/Library/Audio/UISounds/Backup/jbl_confirm.caf"
+mv "/System/Library/Audio/UISounds/Backup/jbl_no_match.caf" "/System/Library/Audio/UISounds/jbl_no_match.caf"
+echo "/System/Library/Audio/UISounds/Backup/jbl_no_match.caf"
+echo "Removing backup folder..."
+rmdir Backup
+echo "Done!"
+echo "Thanks for using Jarvis-Siri v1 By Eric Golde"
+
+exit 0
